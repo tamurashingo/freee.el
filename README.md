@@ -1,0 +1,2 @@
+# freee.el
+Emacsからfreeeをコネコネする
