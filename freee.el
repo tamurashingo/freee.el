@@ -109,10 +109,14 @@
   "companies一覧を取得する"
   (freee:api-call-fetch (concat freee:api-endpoint freee:api-companies)))
 
-
 (defun freee:api-get-account-items ()
   "勘定科目を取得する"
   (freee:api-call-fetch (concat freee:api-endpoint freee:api-account-items "?company_id=" freee:company-id)))
+
+(defun freee:api-get-partners ()
+  "取引先一覧を取得する"
+  (freee:api-call-fetch (concat freee:api-endpoint freee:api-partners "?company_id=" freee:company-id)))
+
 
 
 ;; ----------------------------------------
