@@ -49,6 +49,7 @@
 (defconst freee:api-account-items "/api/1/account_items.json")
 (defconst freee:api-partners "/api/1/partners.json")
 (defconst freee:api-items "/api/1/items.json")
+(defconst freee:api-sections "/api/1/sections.json")
 
 
 ;; ----------------------------------------
@@ -120,6 +121,10 @@
 (defun freee:api-get-items ()
   "品目一覧を取得する"
   (freee:api-call-fetch (concat freee:api-endpoint freee:api-items "?company_id=" freee:company-id)))
+
+(defun freee:api-get-sections ()
+  "部門一覧を取得する"
+  (freee:api-call-fetch (concat freee:api-endpoint freee:api-sections "?company_id=" freee:company-id)))
 
 ;; ----------------------------------------
 ;; External functions
