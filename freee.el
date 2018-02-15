@@ -117,7 +117,9 @@
   "取引先一覧を取得する"
   (freee:api-call-fetch (concat freee:api-endpoint freee:api-partners "?company_id=" freee:company-id)))
 
-
+(defun freee:api-get-items ()
+  "品目一覧を取得する"
+  (freee:api-call-fetch (concat freee:api-endpoint freee:api-items "?company_id=" freee:company-id)))
 
 ;; ----------------------------------------
 ;; External functions
